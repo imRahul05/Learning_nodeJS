@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter an Integer=");
+    scanf("%d",&a);
+    printf("The First three pwers of %d are=\n",a);
+    printf("%d\n",a);
+    printf("%d\n",a*a);
+    printf("%d\n",a*a*a);
+return 0;
+}
+

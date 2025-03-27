@@ -13,3 +13,10 @@
 //     rl.close();
 // });
 
+const os = require("os")
+
+
+console.log(os.cpus().length)
+
+console.log(os.arch())
+

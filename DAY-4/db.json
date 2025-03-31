@@ -1,0 +1,19 @@
+{
+  "todos": [
+    { "id": 1, "name": "Learn backend", "status": false },
+    { "id": 2, "name": "Learn Express", "status": false },
+    { "id": 4, "name": "Learn Postman", "status": false }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "name": "Need of Backend",
+      "desc": "backend is backbone of any project"
+    },
+    {
+      "id": 2,
+      "name": "Need of frontend",
+      "desc": "Frontend is User interface"
+    }
+  ]
+}

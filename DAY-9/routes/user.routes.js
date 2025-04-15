@@ -3,7 +3,7 @@ const UserModel = require('../models/user.models')
 const UserRouter = express.Router();
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
-const myPlaintextPassword = 's0/\/\P4$$w0rD';
+
 
 
 UserRouter.post("/signup",async(req,res)=>{

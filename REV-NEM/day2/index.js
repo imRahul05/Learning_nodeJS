@@ -12,5 +12,11 @@
 // const data = fs.readFileSync("./file.txt","utf-8")
 // console.log(data)
 // console.log("second")
+const express = require('express')
 
+const app = express()
 
+const PORT = 3002 || 3000
+app.listen(PORT,()=>{
+    console.log("server started ",PORT)
+})

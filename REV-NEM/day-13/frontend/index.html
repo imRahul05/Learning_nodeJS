@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css">
+<script>
+    const socket = io("http://localhost:8080", { transports: ["websocket"] });
+    let currentUsername = "";
+    
+    socket.on("message", (data) => {
+        console.log("Message " + data);
+        // Add message to the messages container
+        const messageElement = document.createElement("div");
+        messageElement.classList.add("message", "received");
+        messageElement.textContent = data;
+        document.getElementById("messages-container").appendChild(messageElement);
+    })
+    
+    const handleSubmitUsername = (e) => {
+        e.preventDefault();
+        currentUsername = e.target.username.value; // Store the username
+        console.log("Emitting info with username:", currentUsername);
+        socket.emit("info", { username: currentUsername }); // Emit the 'info' event to the server
+
+        // Hide the username form and show the private message form
+        document.getElementById("username-form").style.display = "none";
+        document.getElementById("chat-container").style.display = "block";
+    }
+
+    const handleSubmitMessage = (e) => {
+        e.preventDefault();
+        const to_name = e.target.to_name.value; // Get the recipient's username
+        const message = e.target.message.value; // Get the message text
+        console.log("Sending private message to:", to_name, "with message:", message);
+
+        // Emit the private_message event
+        socket.emit("private_message", { to_name: to_name, message: message });
+
+        // Add sent message to messages container
+        const messageElement = document.createElement("div");
+        messageElement.classList.add("message", "sent");
+        messageElement.textContent = `To ${to_name}: ${message}`;
+        document.getElementById("messages-container").appendChild(messageElement);
+
+        // Clear the message input field
+        e.target.message.value = '';
+    }
+</script>
+<body>
+    <div id="username-form">
+        <form onsubmit="handleSubmitUsername(event)">
+            <input type="text" name="username" placeholder="Enter your name" required />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="chat-container" style="display: none;">
+        <div id="messages-container"></div>
+        
+        <div id="private-message-form">
+            <form onsubmit="handleSubmitMessage(event)">
+                <input type="text" name="to_name" placeholder="Send to (username)" required />
+                <textarea name="message" placeholder="Write your message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

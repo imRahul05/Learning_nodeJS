@@ -9,3 +9,5 @@ const authmidlleware = ()=>{
         
     }
 }
+
+module.exports=authmidlleware

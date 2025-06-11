@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>OMDB Movie Search</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>OMDB Movies Search</h1>
+
+        <div class="search-box">
+            <input type="text" id="movie" placeholder="Enter movie name">
+            <button class="btn" onclick="getData()">Search</button>
+            <select id="sort" onchange="handleSort()">
+                <option value="">sort By year</option>
+                <option value="asc">Asc</option>
+                <option value="desc">Des</option>
+            </select>
+
+            <select id="filter" onchange="handleFilter()">
+                <option value="">Filter By</option>
+                <option value="movie">movies</option>
+                <option value="series">series</option>
+                <option value="game">game</option>
+            </select>
+        </div>
+
+        <div id="movies-container"></div>
+    </div>
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
 </html>

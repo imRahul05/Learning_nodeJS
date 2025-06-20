@@ -1,6 +1,6 @@
 const Sequence = ["a", "b", "c", "d", "e"];
 let currentPosition = 0;
-let remainingLocks = 3;
+let remainingLocks = 2;
 let finished = false;
 
 let lock1Finished = false;
@@ -52,7 +52,7 @@ function updateLocksDisplay() {
 
 function failFirstLock() {
   terminal.classList.add("fail");
-  updateTerminal("First lock failed. Switching to Lock Type 2 – Timing Lock", "fail");
+  updateTerminal("First lock failed. Switching to Lock Type 2 - Timing Lock", "fail");
   lock1Finished = false;
   currentLock = 2;
   startTimingLock();
@@ -66,21 +66,6 @@ function lockout() {
   updateTerminal("SECURITY ALERTED", "fail");
 }
 
-function unlockVault() {
-  if (!lock1Finished || !lock2Finished) return;
-
-  finished = true;
-  terminal.classList.add("success");
-  updateTerminal("SEQUENCE ACCEPTED", "success");
-  updateTerminal("VAULT UNLOCKED", "success");
-  updateTerminal("ACCESS GRANTED", "success");
-
-  terminal.innerHTML = terminal.innerHTML.replace(
-    "Press any key to begin...",
-    ""
-  );
-}
-
 
 // 2nd Game
 function startTimingLock() {
@@ -92,8 +77,12 @@ function startTimingLock() {
   updateTerminal("Lock Type 2 - Timing Lock");
   updateTerminal("Press the spacebar every 1 second for 5 rounds.");
 
+  document.addEventListener("keydown", spaceHandler);
+
+
   function spaceHandler(e) {
-    if (e.code !== "Space") return;
+    if (e.code !== "Space")
+         return;
 
     const now = performance.now();
 
@@ -108,7 +97,7 @@ function startTimingLock() {
     lastTime = now;
 
     if (Math.abs(delta - 1000) > diff) {
-      updateTerminal(`Too fast or slow! Delta: ${Math.round(delta)}ms`, "fail");
+      updateTerminal(`Too fast or slow!${Math.round(delta)}ms`, "fail");
       document.removeEventListener("keydown", spaceHandler);
       lockout();
       return;
@@ -121,16 +110,31 @@ function startTimingLock() {
       document.removeEventListener("keydown", spaceHandler);
       lock2Finished = true;
       updateTerminal("Timing lock passed!");
+      updateTerminal("Vault unlocked ")
       unlockVault();
     }
   }
 
-  document.addEventListener("keydown", spaceHandler);
 }
 
 function initGame() {
   updateTerminal("VAULT SECURITY SYSTEM v1.0");
   updateTerminal("(a,b,c,d,e) Enter the 5-key sequence to unlock.");
+}
+
+function unlockVault() {
+  if (!lock1Finished || !lock2Finished)
+     return;
+
+  finished = true;
+  updateTerminal("SEQUENCE ACCEPTED", "success");
+  updateTerminal("VAULT UNLOCKED", "success");
+  updateTerminal("ACCESS GRANTED", "success");
+
+  terminal.innerHTML = terminal.innerHTML.replace(
+    "Press any key to begin...",
+    ""
+  );
 }
 
 // Start the game

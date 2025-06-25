@@ -1,13 +1,15 @@
 import { Routes, Route } from 'react-router-dom';
 import ProductPage from '../assets/ProductPage';
-import ProductDetail from '../ProductDetail';
+import ProductDetail from '../Pages/ProductDetail';
+import Login from '../Pages/Login';
 
 
 const AllRoutes = () => {
     return (
         <Routes>
-            <Route path="/" element={<ProductPage/>} />
+            <Route path="/home" element={<ProductPage/>} />
             <Route path="/product/:id" element={<ProductDetail/>}/>
+            <Route path='/login' element={<Login/>}/>
         </Routes>
     );
 };

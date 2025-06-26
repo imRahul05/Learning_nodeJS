@@ -1,27 +1,36 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState } from 'react'
+
+
+const initialState={count:0}
+
+function reducer(state,action){
+   
+  switch(action.type){
+
+    case "INCREMENT":
+      return {count:state.count+1}
+
+    case "DECREMENT":
+      return {count:state.count-1}
+
+    case "RESET":
+      return initialState
+
+      default:
+        return
+  }
+
+     
+}
 
 const Counter = () => {
-    const [ count,setCount] = useState(0)
+  const [state,dispatch] = useState()
 
-    useEffect(() => {
-        console.log("useEffect trigger")
-
-        const timer = setTimeout(()=>{
-              setCount(count+1)
-        },2000)
-     
-
-       return ()=>{
-        clearTimeout(timer)
-       }
-    })
-    
   return (
-    <>
-     <div>
-        <p>Count:{count}</p>
-     </div>
-    </>
+   <>
+    <div>Counter</div>
+
+   </>
   )
 }
 

@@ -1,0 +1,37 @@
+/* Todos.css */
+
+.todos-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.todo-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 16px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.todo-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #333;
+}
+
+.todo-card p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+}

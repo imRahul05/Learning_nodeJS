@@ -20,6 +20,7 @@ UserRouter.post("/signup",async(req,res)=>{
     }else{
         console.log("hashed password",hash)
         await UserModel.create({...req.body,password:hash})
+        console.log("first")
         res.status(201).json({
             message: "User created successfully",
             user: user

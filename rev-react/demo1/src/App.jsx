@@ -10,8 +10,9 @@ const App = () => {
   return (
     <div>
       {/* <Counter/> */}
-       <Navbar/>
-       <AllRoutes/>
+       {/* <Navbar/>
+       <AllRoutes/> */}
+       
 
     </div>
   )

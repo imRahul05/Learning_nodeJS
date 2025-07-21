@@ -22,14 +22,17 @@ const DropDownWithCheckboxes = () => {
     const { name, value, checked } = e.target;
     if (checked) {
       setSelectedValues((prev) => [...prev, value]);
-    }else{
-        const filterValues= selectedValues.filter((val)=>val!==value)
-        setSelectedValues(filterValues)
+    } else {
+      const filterValues = selectedValues.filter((val) => val !== value);
+      setSelectedValues(filterValues);
     }
   }
 
   function handleSubmit() {
     alert(selectedValues);
+     setShow(false);
+     setSelectedValues([])
+    
   }
   return (
     <div
@@ -40,14 +43,18 @@ const DropDownWithCheckboxes = () => {
         flexDirection: "column",
       }}
     >
-      <div  onClick={toggle}
+      <div
+        onClick={toggle}
         style={{
           padding: "5px",
           border: "2px solid black",
           width: "8rem",
           marginTop: "10px",
-        }} >
-        <p>select Values:{"\u2193"}</p>
+        }}
+      >
+        <p>
+  Selected ({selectedValues.length}): {selectedValues.join(", ") || "None"} {"\u2193"}
+</p>
       </div>
       {show && (
         <div
@@ -62,6 +69,10 @@ const DropDownWithCheckboxes = () => {
                   value={option.value}
                   name={option.label}
                   onChange={handleChange}
+                  disabled={
+                    selectedValues.length === 3 &&
+                    !selectedValues.includes(option.value)
+                  }
                 />
               </div>
             );

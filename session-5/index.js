@@ -115,6 +115,7 @@ function startTimingLock() {
     }
   }
 
+  
 }
 
 function initGame() {

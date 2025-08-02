@@ -1,0 +1,557 @@
+\documentclass[a4paper,11pt]{article}
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.95]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage[unicode, draft=false]{hyperref}
+\usepackage{fontawesome5}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{6pt}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+\pagestyle{empty} 
+\setlength{\parskip}{0pt}
+
+\begin{document}
+
+\begin{tabularx}{\linewidth}{@{} C @{} }
+\Huge{Rahul Kumar} \\[6pt]
+\href{https://github.com/imRahul05}{\raisebox{-0.05\height}\faGithub\ Github} \ $|$ 
+\href{https://linkedin.com/in/imrahul05}{\raisebox{-0.05\height}\faLinkedin\ LinkedIn} \ $|$ 
+\href{https://imrahul05.vercel.app/}{\raisebox{-0.05\height}\faGlobe\ Portfolio} \ $|$ 
+\href{mailto:imrahul1024@gmail.com}{\raisebox{-0.05\height}\faEnvelope\ imrahul1024@gmail.com} \ $|$ 
+\href{tel:+919572280546}{\raisebox{-0.05\height}\faMobile\ +91-9572280546} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+\section{Professional Summary}
+Results-driven \textbf{Full-Stack Developer} with expertise in \textbf{ReactJS}, \textbf{Node.js}, \textbf{MongoDB}, and \textbf{Firebase}. Proven experience developing \textbf{scalable web applications}, implementing \textbf{RESTful APIs}, and integrating \textbf{AI technologies}. Proficient in \textbf{JavaScript}, \textbf{responsive design}, and \textbf{performance optimization}. Strong background in \textbf{Agile development} and delivering solutions that address real-world business challenges.
+
+%----------------------------------------------------------------------------------------
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Frontend} & React.js, JavaScript, HTML5, CSS3, Tailwind CSS, Responsive Design, Context API \\
+\textbf{Backend} & Node.js, Express.js, RESTful APIs, JWT Authentication, API Integration \\
+\textbf{Databases} & MongoDB, Firebase Firestore, NoSQL, Database Design \\
+\textbf{Tools \& Cloud} & Git, GitHub, VS Code, Firebase, Vercel, Version Control \\
+\textbf{AI/Visualization} & Gemini AI, Chart.js, Plotly.js, Data Visualization \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2024--2025 & \textbf{Software Development Course}, Masai School -- \textit{Full-Stack Development Focus} \\
+2022--2024 & \textbf{Master of Computer Applications (MCA)}, VTU -- \textbf{84\%} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+\section{Professional Experience}
+\begin{tabularx}{\linewidth}{@{}l r@{}}
+\textbf{Full-Stack Developer (Freelance)} & \textbf{2024 -- Present} \\
+\end{tabularx}
+\vspace{-8pt}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt]
+\item Architected 3+ full-stack applications using React.js, Node.js, and MongoDB with detailed AI integration
+\item Enhanced performance achieving 15-20\% faster loading times through component reusability
+\item Built secure RESTful APIs with JWT authentication and real-time data synchronization
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+\section{Key Projects}
+
+\textbf{FinSage AI -- Personal Finance Assistant} \href{https://finsage-ai.vercel.app/}{\textit{View Project}} \\
+\textbf{Tech:} React.js, Tailwind CSS, Firebase, Gemini AI, Chart.js \\
+\vspace{-6pt}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt]
+\item Developed comprehensive AI-powered finance app with dynamic dashboard, expense tracking, and investment analysis
+\item Integrated Gemini AI for personalized financial recommendations and automated categorization
+\item Delivered 15\% performance improvement through outlined component architecture
+\end{itemize}
+
+\textbf{CRMS -- Candidate Referral Management System} \href{https://crms-frontend-theta.vercel.app/}{\textit{View Project}} \\
+\textbf{Tech:} React.js, Node.js, MongoDB, Express.js, JWT, Plotly.js \\
+\vspace{-6pt}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt]
+\item Engineered comprehensive full-stack HR system for referral tracking with role-based access control
+\item Created admin dashboard with statistical analysis using Plotly.js for data visualization
+\item Deployed secure authentication and MongoDB database schema design
+\end{itemize}
+
+\textbf{PillPal AI -- Medication Management System} \href{https://pill-pal-ai.vercel.app/}{\textit{View Project}} \\
+\textbf{Tech:} React.js, Firebase, Gemini AI, Tailwind CSS \\
+\vspace{-6pt}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt]
+\item Built intelligent medication tracking with AI-powered reminders and real-time notifications
+\item Implemented Firebase Authentication and responsive UI with 20\% performance optimization
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+\section{Achievements \& Certifications}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Smart India Hackathon Winner 2023} & \href{https://drive.google.com/file/d/1up-qiVADDA79aKTaHOE9TNukj5zfq5-h/view?usp=sharing/}{View Certificate} -- National-level innovation award \\
+\textbf{Core Competencies} & Agile Development, Problem Solving, Team Collaboration, Performance Tuning \\
+\end{tabularx}
+
+\vfill
+\end{document}
+
+
+
+
+
+
+
+
+.ndwudn3dnwejdn
+
+% %-----------------------------------------------------------------------------------------------------------------------------------------------%
+% %	The MIT License (MIT)
+% %
+% %	Copyright (c) 2024 Rahul
+% %
+% %	Permission is hereby granted, free of charge, to any person obtaining a copy
+% %	of this software and associated documentation files (the "Software"), to deal
+% %	in the Software without restriction, including without limitation the rights
+% %	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% %	copies of the Software, and to permit persons to whom the Software is
+% %	furnished to do so, subject to the following conditions:
+% %	
+% %	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% %	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% %	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% %	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% %	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% %	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+% %	THE SOFTWARE.
+% %	
+% %
+% %-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+% %----------------------------------------------------------------------------------------
+% %	DOCUMENT DEFINITION
+% %----------------------------------------------------------------------------------------
+
+% % article class because we want to fully customize the page and not use a cv template
+% \documentclass[a4paper,12pt]{article}
+
+% %----------------------------------------------------------------------------------------
+% %	FONT
+% %----------------------------------------------------------------------------------------
+
+% % % fontspec allows you to use TTF/OTF fonts directly
+% % \usepackage{fontspec}
+% % \defaultfontfeatures{Ligatures=TeX}
+
+% % % modified for ShareLaTeX use
+% % \setmainfont[
+% % SmallCapsFont = Fontin-SmallCaps.otf,
+% % BoldFont = Fontin-Bold.otf,
+% % ItalicFont = Fontin-Italic.otf
+% % ]
+% % {Fontin.otf}
+
+% %----------------------------------------------------------------------------------------
+% %	PACKAGES
+% %----------------------------------------------------------------------------------------
+% \usepackage{url}
+% \usepackage{parskip} 	
+
+% %other packages for formatting
+% \RequirePackage{color}
+% \RequirePackage{graphicx}
+% \usepackage[usenames,dvipsnames]{xcolor}
+% \usepackage[scale=0.9]{geometry}
+
+% %tabularx environment
+% \usepackage{tabularx}
+
+% %for lists within experience section
+% \usepackage{enumitem}
+
+% % centered version of 'X' col. type
+% \newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+% %to prevent spillover of tabular into next pages
+% \usepackage{supertabular}
+% \usepackage{tabularx}
+% \newlength{\fullcollw}
+% \setlength{\fullcollw}{0.47\textwidth}
+
+% %custom \section
+% \usepackage{titlesec}				
+% \usepackage{multicol}
+% \usepackage{multirow}
+
+% %CV Sections inspired by: 
+% %http://stefano.italians.nl/archives/26
+% \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+% \titlespacing{\section}{0pt}{10pt}{10pt}
+
+% %for publications
+% \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+% %Setup hyperref package, and colours for links
+% \usepackage[unicode, draft=false]{hyperref}
+% \definecolor{linkcolour}{rgb}{0,0.2,0.6}
+% \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+% \addbibresource{citations.bib}
+% \setlength\bibitemsep{1em}
+
+% %for social icons
+% \usepackage{fontawesome5}
+
+% %debug page outer frames
+% %\usepackage{showframe}
+
+% %----------------------------------------------------------------------------------------
+% %	BEGIN DOCUMENT
+% %----------------------------------------------------------------------------------------
+% \begin{document}
+
+% % non-numbered pages
+% \pagestyle{empty} 
+
+% %----------------------------------------------------------------------------------------
+% %	TITLE
+% %----------------------------------------------------------------------------------------
+
+% % \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% % \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% % \raisebox{-0.05\height}\faGithub\ username \ | \
+% % \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% % \end{tabularx}
+
+% \begin{tabularx}{\linewidth}{@{} C @{}}
+% \Huge{Rahul Kumar} \\[7.5pt]
+% \href{https://github.com/imRahul05}{\raisebox{-0.05\height}\faGithub\ Github} \ $|$ \ 
+% \href{https://linkedin.com/in/imrahul05}{\raisebox{-0.05\height}\faLinkedin\ linkedin} \ $|$ \ 
+% \href{https://imrahul05.vercel.app/}{\raisebox{-0.05\height}\faGlobe \ PortFolio} \ $|$ \ 
+% \href{mailto:rahulkumar20000516@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ imrahul1024@gmail.com} \ $|$ \ 
+% \href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ 9572280546} \\
+% \end{tabularx}
+
+% %----------------------------------------------------------------------------------------
+% % EXPERIENCE SECTIONS
+% %----------------------------------------------------------------------------------------
+
+% %Interests/ Keywords/ Summary
+% \section{Summary}
+% Aspiring software developer with hands-on experience in \textbf{ReactJS}, \textbf{NodeJS}, Firebase, and \textbf{MongoDB}.
+% Skilled in crafting innovative web solutions, integrating \textbf{AI} technologies, and building \textbf{REST APIs}.
+% Proficient in JavaScript and \textbf{ContextAPI} to deliver seamless frontend experiences. Passionate about
+% building scalable applications, \textbf{optimizing} performance, and solving real-world problems through
+% code.
+% %Experience
+% % \section{Work Experience}
+
+% % \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% % \textbf{Web developer intern (Remote)}    \hfill \textbf{Dec 2023 - Jan 2024}&\hfill
+% % \multicolumn{2}{@{}X@{}}{Developed two projects during online internship \href{https://imrahul05.github.io/CRT_internship_task_1/}{Resume Builder} and a \href{https://imrahul05.github.io/CRT_INTERNSHIP_TASK_2/}{ Web music player} which helps me to better understand and apply my knowledge of HTML, CSS and JAVASCRIPT.}  \\ 
+% % \multicolumn{5}{@{}X@{}}{\textbf {Resume Builder -}Designed a user-friendly interface with form validation to ensure accurate and complete user inputs.Using JavaScript,Main focus on making the application responsive across various devices.} \\\\
+
+% % \multicolumn{5}{@{}X@{}}{\textbf {Web Music Player -}Designed  and implemented features like play, pause, skip, and volume control, along with playlist management.Ensuring responsiveness and cross-browser compatibility was a key focus.This project deepened my understanding of JavaScript,DOM manipulation, and web application optimization.} \\
+
+% \end{tabularx}
+% %	EDUCATION
+% %----------------------------------------------------------------------------------------
+% \section{Education}
+% 2024–2025 & \textbf{Software Development course}, Masai School \\[4pt]
+% 2022–2024 & \textbf{Master of Computer Applications (MCA)} \\
+%           & Visvesvaraya Technological University (VTU) – \textbf{Percentage: 84\%} 
+% % 2018 & Class 12th BSEB \hfill   \\
+
+% % 2015 & Class 10th CBSE \hfill  (Grades) \\
+
+
+% %Projects
+% \section{Projects}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{FinSage AI – Personal Finance Assistant}  \hfill \href{https://finsage-ai.vercel.app/}{View project}\\[3.75pt] \hfill
+% \multicolumn{2}{@{}X@{}}{\textbf{Tech Stack: React.js, Tailwind CSS, Firebase, Gemini AI, Chart.js}}  \\
+% \multicolumn{4}{@{}X@{}}{-- Built an AI-powered personal finance app to help users manage income, expenses, investments, and loans. Features include a dynamic dashboard, personalized AI financial advisor, analytics, and scenario planning.}  \\
+% \end{tabularx}
+
+
+
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{CRMS - Candidate Referral System}  \hfill \href{https://crms-frontend-theta.vercel.app/}{View project}\\[3.75pt] \hfill
+% \multicolumn{2}{@{}X@{}}{\textbf{Tech Stack: React.js, TailwindCSS, MongoDB, ExpressJS, JWT, Plotly.js}}  \\
+% \multicolumn{4}{@{}X@{}}{-- A comprehensive web application for managing employee referrals.Users can submit and track referrals while admins can manage the entire hiring pipeline with detailed statistics..}  \\
+% \end{tabularx}
+
+
+
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{PillPal AI} & \hfill \href{https://pill-pal-ai.vercel.app/}{View project} \\[3.75pt]
+% \multicolumn{2}{@{}X@{}}{\textbf{Tech: React.js, Firebase, Gemini AI, Tailwind CSS, JavaScript}}  \\
+% \multicolumn{2}{@{}X@{}}{-- A user-friendly medication tracker using React.js and Tailwind CSS. Implemented smart reminders for dose and refill alerts. Integrated Firebase for secure authentication and real-time storage.
+% }  \\
+
+% \end{tabularx}
+
+% %----------------------------------------------------------------------------------------
+
+% %----------------------------------------------------------------------------------------
+% %----------------------------------------------------------------------------------------
+
+% %----------------------------------------------------------------------------------------
+% %	SKILLS
+% %----------------------------------------------------------------------------------------
+% \section{Skills}
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
+% \multicolumn{2}{@{}l}{\textbf{Technical Skills}} \\[2pt]
+% Web Development & \textbf{HTML, CSS, JavaScript, React.js,Express.js Node.js, MongoDB, Responsive Web Design} \\
+% Mobile Development & \textbf{Flutter (Dart), Firebase} \\
+% Tools & \textbf{Git, GitHub, VS Code} \\[8pt]
+% \multicolumn{2}{@{}l}{\textbf{Soft Skills}} \\[2pt]
+% \multicolumn{2}{@{}X}{Time Management, Effective Communication, Teamwork, Problem Solving} \\
+% \end{tabularx}
+
+
+
+
+% \section{Achievements}
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
+% \textbf {Smart India Hackathon participant and winner 2023} & \hfill \href{https://drive.google.com/file/d/1up-qiVADDA79aKTaHOE9TNukj5zfq5-h/view?usp=sharing/}{Certificate} \\[3.75pt]
+
+
+% \normalsize{ }\\
+
+% \end{tabularx}
+% \vfill
+
+
+% \end{document}
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%   The MIT License (MIT)
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+% \documentclass[a4paper,12pt]{article}
+
+% %----------------------------------------------------------------------------------------
+% %   PACKAGES
+% %----------------------------------------------------------------------------------------
+% \usepackage{url}
+% \usepackage{parskip} 
+% \usepackage{color}
+% \usepackage{graphicx}
+% \usepackage[usenames,dvipsnames]{xcolor}
+% \usepackage[scale=0.9]{geometry}
+% \usepackage{tabularx}
+% \usepackage{enumitem}
+% \usepackage{supertabular}
+% \usepackage{titlesec}
+% \usepackage{multicol}
+% \usepackage{multirow}
+% \usepackage[unicode, draft=false]{hyperref}
+% \usepackage{fontawesome5}
+
+% \newcolumntype{C}{>{\centering\arraybackslash}X} 
+% \newlength{\fullcollw}
+% \setlength{\fullcollw}{0.47\textwidth}
+
+% \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+% \titlespacing{\section}{0pt}{10pt}{10pt}
+% \definecolor{linkcolour}{rgb}{0,0.2,0.6}
+% \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+% \pagestyle{empty} 
+
+% \begin{document}
+
+% \begin{tabularx}{\linewidth}{@{} C @{} }
+% \Huge{Rahul Kumar} \\[7.5pt]
+% \href{https://github.com/imRahul05}{\raisebox{-0.05\height}\faGithub\ Github} \ $|$ 
+% \href{https://linkedin.com/in/imrahul05}{\raisebox{-0.05\height}\faLinkedin\ LinkedIn} \ $|$ 
+% \href{https://imrahul05.vercel.app/}{\raisebox{-0.05\height}\faGlobe\ Portfolio} \ $|$ 
+% \href{mailto:rahulkumar20000516@gmail.com}{\raisebox{-0.05\height}\faEnvelope\ imrahul1024@gmail.com} \ $|$ 
+% \href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile\ 9572280546} \\
+% \end{tabularx}
+
+% %----------------------------------------------------------------------------------------
+% \section{Summary}
+% Aspiring software developer with hands-on experience in \textbf{ReactJS}, \textbf{NodeJS}, \textbf{Firebase}, and \textbf{MongoDB}.
+% Skilled in crafting innovative web solutions, integrating \textbf{AI} technologies, and building \textbf{REST APIs}.
+% Proficient in JavaScript and \textbf{Context API} to deliver seamless frontend experiences. Passionate about
+% building scalable applications, \textbf{optimizing} performance, and solving real-world problems through
+% code.
+
+% %----------------------------------------------------------------------------------------
+% \section{Education}
+% 2024--2025 & \textbf{Software Development Course}, Masai School \\[4pt]
+% 2022--2024 & \textbf{Master of Computer Applications (MCA)} \\
+%            & Visvesvaraya Technological University (VTU) -- \textbf{Percentage: 84\%} \\
+
+% %----------------------------------------------------------------------------------------
+% \section{Projects}
+
+% \begin{tabularx}{\linewidth}{@{}l r@{}}
+% \textbf{FinSage AI -- Personal Finance Assistant} & \href{https://finsage-ai.vercel.app/}{View Project} \\
+% \multicolumn{2}{@{}X@{}}{\textbf{Tech Stack: React.js, Tailwind CSS, Firebase, Gemini AI, Chart.js}} \\
+% \multicolumn{2}{@{}X@{}}{-- Developed an AI-powered personal finance app to help users manage income, expenses, investments, and loans. Key features include a dynamic dashboard, personalized AI financial advisor, analytics, and scenario planning. Optimized code reusability with shared components, resulting in a 15\% faster loading time.} \\
+% \end{tabularx}
+
+% \begin{tabularx}{\linewidth}{@{}l r@{}}
+% \textbf{CRMS -- Candidate Referral System} & \href{https://crms-frontend-theta.vercel.app/}{View Project} \\
+% \multicolumn{2}{@{}X@{}}{\textbf{Tech Stack: React.js, TailwindCSS, MongoDB, ExpressJS, JWT, Plotly.js}} \\
+% \multicolumn{2}{@{}X@{}}{-- A comprehensive web application for managing employee referrals. Users can submit and track referrals, while admins can manage the entire hiring pipeline with detailed statistics. Shared reusable components helped reduce loading time by 10\%.} \\
+% \end{tabularx}
+
+% \begin{tabularx}{\linewidth}{@{}l r@{}}
+% \textbf{PillPal AI} & \href{https://pill-pal-ai.vercel.app/}{View Project} \\
+% \multicolumn{2}{@{}X@{}}{\textbf{Tech Stack: React.js, Firebase, Gemini AI, Tailwind CSS, JavaScript}} \\
+% \multicolumn{2}{@{}X@{}}{-- A user-friendly medication tracking app built using React.js and Tailwind CSS. Features include smart reminders for dosage and refill alerts. Firebase is used for secure authentication and real-time data storage. Leveraged common components across modules to reduce loading time by 20\%.} \\
+% \end{tabularx}
+
+% %----------------------------------------------------------------------------------------
+% \section{Skills}
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
+% \multicolumn{2}{@{}l}{\textbf{Technical Skills}} \\[2pt]
+% Web Development & \textbf{HTML, CSS, JavaScript, React.js, Express.js, Node.js, MongoDB, Responsive Web Design} \\
+% Mobile Development & \textbf{Flutter (Dart), Firebase} \\
+% Tools & \textbf{Git, GitHub, VS Code} \\[8pt]
+% \multicolumn{2}{@{}l}{\textbf{Soft Skills}} \\[2pt]
+% \multicolumn{2}{@{}X}{Time Management, Effective Communication, Teamwork, Problem Solving} \\
+% \end{tabularx}
+
+% %----------------------------------------------------------------------------------------
+% \section{Achievements}
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
+% \textbf{Smart India Hackathon -- Winner 2023} & \href{https://drive.google.com/file/d/1up-qiVADDA79aKTaHOE9TNukj5zfq5-h/view?usp=sharing/}{View Certificate} \\
+% \end{tabularx}
+
+% \vfill
+% \end{document}
+
+\documentclass[a4paper,11pt]{article}
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.95]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage[unicode, draft=false]{hyperref}
+\usepackage{fontawesome5}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{6pt}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+\pagestyle{empty} 
+\setlength{\parskip}{0pt}
+
+\begin{document}
+
+\begin{tabularx}{\linewidth}{@{} C @{} }
+\Huge{Rahul Kumar} \\[6pt]
+\href{https://github.com/imRahul05}{\raisebox{-0.05\height}\faGithub\ Github} \ $|$ 
+\href{https://linkedin.com/in/imrahul05}{\raisebox{-0.05\height}\faLinkedin\ LinkedIn} \ $|$ 
+\href{https://imrahul05.vercel.app/}{\raisebox{-0.05\height}\faGlobe\ Portfolio} \ $|$ 
+\href{mailto:imrahul1024@gmail.com}{\raisebox{-0.05\height}\faEnvelope\ imrahul1024@gmail.com} \ $|$ 
+\href{tel:+919572280546}{\raisebox{-0.05\height}\faMobile\ +91-9572280546} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+\section{Professional Summary}
+Results-driven \textbf{Full-Stack Developer} with expertise in \textbf{ReactJS}, \textbf{Node.js}, \textbf{MongoDB}, and \textbf{Firebase}. Proven experience developing \textbf{scalable web applications}, implementing \textbf{RESTful APIs}, and integrating \textbf{AI technologies}. Skilled in \textbf{JavaScript}, \textbf{responsive design}, and \textbf{performance optimization}. Strong background in \textbf{Agile development} and delivering solutions that solve real-world business problems.
+
+%----------------------------------------------------------------------------------------
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Frontend} & React.js, JavaScript, HTML5, CSS3, Tailwind CSS, Responsive Design, Context API \\
+\textbf{Backend} & Node.js, Express.js, RESTful APIs, JWT Authentication, API Integration \\
+\textbf{Databases} & MongoDB, Firebase Firestore, NoSQL, Database Design \\
+\textbf{Tools \& Cloud} & Git, GitHub, VS Code, Firebase, Vercel, Version Control \\
+\textbf{AI/Visualization} & Gemini AI, Chart.js, Plotly.js, Data Visualization \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2024--2025 & \textbf{Software Development Course}, Masai School -- \textit{Full-Stack Development Focus} \\
+2022--2024 & \textbf{Master of Computer Applications (MCA)}, VTU -- \textbf{84\%} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+\section{Professional Experience}
+\begin{tabularx}{\linewidth}{@{}l r@{}}
+\textbf{Full-Stack Developer (Freelance)} & \textbf{2024 -- Present} \\
+\end{tabularx}
+\vspace{-8pt}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt]
+\item Architected 3+ full-stack applications using React.js, Node.js, and MongoDB with AI integration
+\item Optimized performance achieving 15-20\% faster loading times through component reusability
+\item Built secure RESTful APIs with JWT authentication and real-time data synchronization
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+\section{Key Projects}
+
+\textbf{FinSage AI -- Personal Finance Assistant} \href{https://finsage-ai.vercel.app/}{\textit{View Project}} \\
+\textbf{Tech:} React.js, Tailwind CSS, Firebase, Gemini AI, Chart.js \\
+\vspace{-6pt}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt]
+\item Developed AI-powered finance app with dynamic dashboard, expense tracking, and investment analysis
+\item Integrated Gemini AI for personalized financial recommendations and automated categorization
+\item Achieved 15\% performance improvement through optimized component architecture
+\end{itemize}
+
+\textbf{CRMS -- Candidate Referral Management System} \href{https://crms-frontend-theta.vercel.app/}{\textit{View Project}} \\
+\textbf{Tech:} React.js, Node.js, MongoDB, Express.js, JWT, Plotly.js \\
+\vspace{-6pt}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt]
+\item Engineered full-stack HR system for referral tracking with role-based access control
+\item Created admin dashboard with statistical analysis using Plotly.js for data visualization
+\item Implemented secure authentication and MongoDB database schema design
+\end{itemize}
+
+\textbf{PillPal AI -- Medication Management System} \href{https://pill-pal-ai.vercel.app/}{\textit{View Project}} \\
+\textbf{Tech:} React.js, Firebase, Gemini AI, Tailwind CSS \\
+\vspace{-6pt}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt]
+\item Built intelligent medication tracking with AI-powered reminders and real-time notifications
+\item Implemented Firebase Authentication and responsive UI with 20\% performance optimization
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+\section{Achievements \& Certifications}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Smart India Hackathon Winner 2023} & \href{https://drive.google.com/file/d/1up-qiVADDA79aKTaHOE9TNukj5zfq5-h/view?usp=sharing/}{View Certificate} -- National-level innovation award \\
+\textbf{Core Competencies} & Agile Development, Problem Solving, Team Collaboration, Performance Tuning \\
+\end{tabularx}
+
+\vfill
+\end{document}

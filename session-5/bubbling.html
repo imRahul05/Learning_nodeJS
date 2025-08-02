@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Capturing Example</title>
+  <style>
+    div {
+      padding: 20px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div id="outer">
+    Outer
+    <div id="middle">
+      Middle
+      <div id="inner">
+        Inner
+      </div>
+    </div>
+  </div>
+
+  <script>
+//     window.addEventListener('click', () => {
+//   console.log('Window capture!');
+// },true);
+
+//     document.getElementById("outer").addEventListener(
+//       "click",
+//       function () {
+//         console.log("Outer Div - Capturing");
+//       },
+//       true // <--- useCapture: true
+//     );
+
+//     document.getElementById("middle").addEventListener(
+//       "click",
+//       function (e) {
+//       //  e.stopPropagation();
+//         console.log("Middle Div - Capturing");
+//       },
+//       true
+//     );
+
+//     document.getElementById("inner").addEventListener(
+//       "click",
+//       function () {
+//         console.log("Inner Div - Capturing");
+//       },false
+//     );
+
+ window.addEventListener('click', () => {
+  console.log('Window capture!');
+ },true);
+    //Add bubbling listeners to compare
+    document.getElementById("outer").addEventListener("click", () => {
+      console.log("Outer Div - Bubbling");
+    },true);
+
+    document.getElementById("middle").addEventListener("click", (e) => {
+        // e.stopPropagation();
+      console.log("Middle Div - Bubbling");
+    },true);
+
+    document.getElementById("inner").addEventListener("click", () => {
+      console.log("Inner Div - Bubbling");
+    });
+  </script>
+</body>
+</html>

@@ -1,25 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 const Timer = () => {
-  const [time,setTime]=useState({
-    
-  })
-  const [intervalID,setIntervalID]=useState([])
+  const [time, setTime] = useState(0);
+  const [intervalID, setIntervalID] = useState([]);
 
-
-  function handleStart(){
-    const id = setInterval(()=>{
-      setTime((prev)=>prev+1)
-    },1000)
-    setIntervalID(id)
+  function handleStart() {
+    const id = setInterval(() => {
+      setTime((prev) => prev + 1);
+    }, 1000);
+    setIntervalID(id);
   }
 
-  function handleStop(){
-    clearInterval(intervalID)
+  function handleStop() {
+    clearInterval(intervalID);
   }
-  function handleReset(){
-    setTime(0)
-    setIntervalID(null)
+  function handleReset() {
+    setTime(0);
+    setIntervalID(null);
     handleStop();
   }
   return (
@@ -29,10 +26,7 @@ const Timer = () => {
       <button onClick={handleStop}>stop</button>
       <button onClick={handleReset}>Reset</button>
     </div>
-  )
-}
+  );
+};
 
-export default Timer
-
-
-
+export default Timer;

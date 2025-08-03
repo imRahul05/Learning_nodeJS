@@ -7,13 +7,15 @@ import Navbar from './components/Navbar'
 import Timer from './Timer'
 import Todo from './Todo'
 import NewTimer from './NewTimer'
+import Stopwatch from './Stopwatch'
+import './Stopwatch.css'
 
 
 const App = () => {
   return (
     <div>
     <NewTimer/>
-
+    <Stopwatch />
     </div>
   )
 }

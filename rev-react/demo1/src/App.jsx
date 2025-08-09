@@ -14,7 +14,7 @@ import './Stopwatch.css'
 const App = () => {
   return (
     <div>
-    <NewTimer/>
+    {/* <NewTimer/> */}
     <Stopwatch />
     </div>
   )

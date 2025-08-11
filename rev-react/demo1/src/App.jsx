@@ -10,6 +10,7 @@ import NewTimer from './NewTimer'
 import Stopwatch from './Stopwatch'
 import './Stopwatch.css'
 import Login from './Login'
+import PdfTextReader from './PdfReader'
 
 
 const App = () => {
@@ -17,7 +18,8 @@ const App = () => {
     <div>
     {/* <NewTimer/> */}
     {/* <Stopwatch /> */}
-    <Login/>
+    {/* <Login/> */}
+    <PdfTextReader/>
     </div>
   )
 }
